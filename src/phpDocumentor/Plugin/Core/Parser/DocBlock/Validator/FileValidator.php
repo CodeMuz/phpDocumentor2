@@ -40,13 +40,13 @@ class FileValidator extends ClassValidator
      */
     public function isValid()
     {
-        $filename = $this->source->getFilename();
-        if (!$this->docblock) {
-            $this->logParserError(
-                'ERROR', 50007, $this->lineNumber, array($filename)
-            );
-            return false;
-        }
+        // $filename = $this->source->getFilename();
+        // if (!$this->docblock) {
+            // $this->logParserError(
+                // 'ERROR', 50007, $this->lineNumber, array($filename)
+            // );
+            // return false;
+        // }
 
         $valid = true;
 
